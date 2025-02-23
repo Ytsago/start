@@ -4,10 +4,11 @@ BLUE   = \033[34m
 RED    = \033[31m
 RESET  = \033[0m
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g3
 CC = cc
 AR = ar
 ARFLAG = -rcs
+MAKE := $(MAKE) -j
 
 FILE = main.c
 
