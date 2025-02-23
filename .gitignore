@@ -1,0 +1,5 @@
+.Obj/
+.vscode
+**/a.out
+*.json
+*.github
