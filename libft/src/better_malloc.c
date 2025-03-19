@@ -6,7 +6,7 @@
 /*   By: secros <secros@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 13:09:12 by secros            #+#    #+#             */
-/*   Updated: 2025/03/18 15:06:59 by secros           ###   ########.fr       */
+/*   Updated: 2025/03/19 13:10:05 by secros           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void	ft_free(void *pt, t_garb **head)
 		prev = tmp;
 		tmp = tmp->next;
 	}
+	free(pt);
 }
 
 static void	addback_garb(t_garb **lst, t_garb *new)
